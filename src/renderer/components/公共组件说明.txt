@@ -1,0 +1,3 @@
+自定义封装公共组件统一以Cs开头，比如CsHeader.vue
+全局公共组件放在components
+页面放在pages

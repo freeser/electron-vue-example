@@ -1,0 +1,51 @@
+@main-color: #3398DC;
+@body-bg-color: #fff;
+@main-bg-color: #fff;
+@title-bg-color: #F9F9F9;
+
+@select-bg-color: #0F1820;
+
+@main-txt-color: #585858;
+
+@buy-color: #4B9F5D;
+@sell-color: #A03C2D;
+@warn-color: #F8A521;
+
+.flex(){ display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.flexitem(@w:0) {
+  -webkit-box-flex:@w;
+  -webkit-flex:@w;
+      -ms-flex:@w;
+          flex:@w;
+}
+/* flex父元素上设置子元素水平方向对齐方式 */
+.justifyContent(@w: center) {
+    -ms-flex-pack: @w;
+    -webkit-box-pack: @w;
+    -webkit-justify-content: @w;
+            justify-content: @w;
+}
+/* flex父元素上设置子元素垂直方向对齐方式 */
+.alignItem(@w: center) {
+    -ms-flex-align: @w;
+    -webkit-box-align: @w;
+    -webkit-align-items: @w;
+            align-items: @w;
+}
+.alignSelf(@w: center) {
+    -ms-flex-item-align: @w;
+    -ms-grid-row-align: @w;
+    -webkit-align-self: @w;
+            align-self: @w;
+}
+.order(@w: 0) {
+    -ms-flex-order: @w;
+    -webkit-box-ordinal-group: @w;
+    -webkit-order: @w;
+            order: @w;
+}
+.flexwrap(@w: wrap) {
+  -webkit-flex-wrap: @w;
+      -ms-flex-wrap: @w;
+          flex-wrap: @w;
+}
