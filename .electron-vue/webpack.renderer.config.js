@@ -20,7 +20,8 @@ const vueLoaderConfig = require('./vue-loader.conf')
  * that provide pure *.vue files that need compiling
  * https://simulatedgreg.gitbooks.io/electron-vue/content/en/webpack-configurations.html#white-listing-externals
  */
-let whiteListedModules = ['vue']
+// 添加 element-ui 到白名单，解决$listeners is readonly.
+let whiteListedModules = ['vue', 'element-ui']
 
 let rendererConfig = {
   devtool: '#cheap-module-eval-source-map',
