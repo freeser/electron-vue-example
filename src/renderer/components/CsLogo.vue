@@ -1,14 +1,12 @@
 <template>
     <router-link class="cs-logo h100" :to="link ? link : {}">
-        <img v-if="theme=='white'" src="@/assets/img/logo_white.png" :style="`height: ${height}`" alt="logo" />
-        <img v-else src="@/assets/img/logo_blue.png" :style="`height: ${height}`" alt="logo" />
+        <img src="@/assets/img/logo.jpg" :style="`height: ${height}`" alt="logo" />
     </router-link>
 </template>
 <script>
 export default {
   props: {
     height: String,
-    theme: String,
     link: String
   }
 }

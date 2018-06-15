@@ -1,23 +1,15 @@
 <template>
     <article id="app">
         <vue-topprogress ref="topProgress"></vue-topprogress>
-        <cs-header></cs-header>
-        <section style="min-height: 80vh;">
-            <router-view/>
-        </section>
-        <cs-footer></cs-footer>
+        <router-view/>
     </article>
 </template>
 
 <script>
-    import CsHeader from '@/components/CsHeader.vue'
-    import CsFooter from '@/components/CsFooter.vue'
     import { vueTopprogress } from 'vue-top-progress'
     export default {
       name: 'app',
       components: {
-        CsHeader,
-        CsFooter,
         vueTopprogress
       },
       computed: {
@@ -32,3 +24,7 @@
       }
     }
 </script>
+<style lang="less">
+    @import './assets/css/style.less';
+    @import "./assets/css/color-dark.css";
+</style>

@@ -1,0 +1,68 @@
+html,
+body,
+#app,
+.layout-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.dangercolor {
+    color: #df4c50 !important;
+}
+.successcolor {
+    color: #418BCA !important;
+}
+.maincolor {
+    color: #15b294 !important;
+}
+
+.move-enter-active,
+.move-leave-active {
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+
+.breadcrumb-div{
+    line-height: 40px;
+}
+
+.btn-maincolor{
+    border-color: #1BAF99!important;
+    background: #1BAF99!important;
+    &:hover, 
+    &:focus{
+        background: rgb(71, 182, 165)!important;
+    }
+}
+
+.el-table-custom{
+    &.el-table{
+        th{
+            background: #F2F2F2;
+            padding: 5px 0;
+        }
+    }
+    .el-table__expanded-cell{
+        padding: 10px;
+    }
+}
+
+.el-dialog-custom{
+    .el-dialog{
+        max-width: 90%;
+    }
+    .el-dialog__header{
+        border-bottom: 1px solid #E6E6E6;
+    }
+}

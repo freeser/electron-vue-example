@@ -11,6 +11,7 @@ const router = new Router({
 })
 
 router.beforeEach((to, from, next) => {
+  console.log('redirect to route of ' + to.fullPath)
   store.commit('vuex_m_loading', 'start')
   next()
 })
